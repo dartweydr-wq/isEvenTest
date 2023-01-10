@@ -22,7 +22,7 @@ func TestIsEven(t *testing.T) {
 
 		result := IsEven(testCase.numbers)
 
-		if result == testCase.expected {
+		if result != testCase.expected {
 			t.Error("Not even")
 		}
 
